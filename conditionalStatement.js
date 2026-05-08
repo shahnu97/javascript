@@ -17,6 +17,14 @@
 let age = 60;
 if (age >= 23 && age <= 60){
     console.log('You are Eligible for Driving License');
-} else{
+} else {
     console.log('You are not Eligible for Driving License');
+}
+
+//Postive Negative Number in JS:
+let number = -20;
+if(number >= 0){
+    console.log('This Number is Positive');
+} else {
+    console.log('This Number is Negative');
 }
