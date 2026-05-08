@@ -51,11 +51,3 @@
 // }else{
 //     console.log('A is less than 15');
 // }
-
-//Javascript if Condition:
-let age = 55;
-if (age > 18 ){
-    console.log('This is Valid for Driving License');
-}else{
-    console.log('This Age is not valid for Driving License');
-}
