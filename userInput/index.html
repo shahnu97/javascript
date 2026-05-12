@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .finaloutput{
+            font-size: 22px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>Please Enter a Valid Number when Prompted</div>
+    <button onclick="inputHandler()">Click Here and Enter the Number</button>
+    <div class="printhere"></div>
+
+    <hr>
+
+    <h2>Addition Calculator</h2>
+    <h5>Enter Number 1</h5>
+    <input type="number" name="number1" id="number1" required>
+    <h5>Enter Number 2</h5>
+    <input type="number" name="number2" id="number2" required>
+    <button onclick="additionCalculator()" type="submit">Calculate</button>
+    <div class="finaloutput"></div>
+
+    <script>
+        function inputHandler() {
+            let number = parseInt(window.prompt('Enter The Number Here'));
+            document.querySelector('.printhere').innerHTML = typeof(number);
+        }
+        //Addition Calculator
+        function additionCalculator() {
+           let num1 =  document.getElementById('number1').value;
+           let num2 =  document.getElementById('number2').value;
+           let final = Number(num1) + Number(num2);
+           document.querySelector('.finaloutput').innerHTML = final;
+        }
+    </script>
+</body>
+</html>
