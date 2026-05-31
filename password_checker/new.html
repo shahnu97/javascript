@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Welcome to Password Validator</h2>
+    <div class="message"></div>
+    <script>
+        let current_pass = 123456;
+        for (let i=4; i>=1; i--) {
+            let user_entered_pass = parseInt(window.prompt('Please Enter the Password'));
+            if (current_pass === user_entered_pass){
+                document.querySelector('.message').innerHTML="Entered Password is Correct";
+                break;
+            } else {
+                document.querySelector('.message').innerHTML = 'Entered Password is Incorrect';
+                alert(`${i-1} Attempts Remaining`);
+            }
+        }
+    </script>
+</body>
+</html>
